@@ -8,12 +8,14 @@ An implementation of [hysteresis](http://en.wikipedia.org/wiki/Hysteresis) in Ja
 
 ```sh
 $ npm install hysteresis
+```
+```sh
 $ bower install littlebits/hysteresis
 ```
 
-## Guide
+## Example
 
-There are a variety of use-cases for hysteresis. One use-case at [littleBits](littlebits.cc) is that we use it to smooth unwanted jitter in the [cloudBit's](http://littlebits.cc/cloud) data stream.
+There are a variety of use-cases for hysteresis. One use-case at [littleBits](littlebits.cc) is that we use it to avoid jittery event inference in the [cloudBit's](http://littlebits.cc/cloud) data stream.
 
 Here is a naive example:
 ```js
