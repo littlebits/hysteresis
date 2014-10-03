@@ -1,0 +1,24 @@
+{
+  "name": "hysteresis",
+  "version": "1.0.0",
+  "description": "An implementation of hysteresis in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register",
+    "start": "mocha --compilers coffee:coffee-script/register --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/littlebits/hysteresis.git"
+  },
+  "author": "Jason Kuhrt <jasonkuhrt@me.com> (http://jasonkuhrt.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/littlebits/hysteresis/issues"
+  },
+  "homepage": "https://github.com/littlebits/hysteresis",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^1.21.4"
+  }
+}
