@@ -1,0 +1,28 @@
+{
+  "name": "hysteresis",
+  "version": "0.0.0",
+  "homepage": "https://github.com/littlebits/hysteresis",
+  "authors": [
+    "Jason Kuhrt <jasonkuhrt@me.com>"
+  ],
+  "description": "An implementation of hysteresis in JavaScript",
+  "main": "./lib/index.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "jitter",
+    "smoothing",
+    "smooth",
+    "hysteresis",
+    "threshold"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

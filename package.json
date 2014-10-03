@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "An implementation of hysteresis in JavaScript",
   "main": "index.js",
+  "keywords": [
+    "jitter",
+    "smoothing",
+    "smooth",
+    "hysteresis",
+    "threshold"
+  ],
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script/register",
     "start": "mocha --compilers coffee:coffee-script/register --watch"
