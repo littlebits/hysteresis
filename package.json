@@ -1,8 +1,8 @@
 {
   "name": "hysteresis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An implementation of hysteresis in JavaScript",
-  "main": "index.js",
+  "main": "lib/index.js",
   "keywords": [
     "jitter",
     "smoothing",
