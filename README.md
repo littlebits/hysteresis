@@ -1,4 +1,4 @@
-# hysteresis [![build status](https://secure.travis-ci.org/littlebits/hysteresis.png)](http://travis-ci.org/littlebits/hysteresis)
+# hysteresis [![Circle CI](https://circleci.com/gh/littlebits/hysteresis.svg?style=svg)](https://circleci.com/gh/littlebits/hysteresis)
 
 An implementation of [hysteresis](http://en.wikipedia.org/wiki/Hysteresis) in JavaScript
 
