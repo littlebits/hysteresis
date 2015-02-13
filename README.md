@@ -2,8 +2,6 @@
 
 An implementation of [hysteresis](http://en.wikipedia.org/wiki/Hysteresis) in JavaScript
 
-
-
 ## Installation
 
 ```sh
@@ -15,7 +13,35 @@ $ bower install littlebits/hysteresis
 
 ## Example
 
-There are a variety of use-cases for hysteresis. One use-case at [littleBits](littlebits.cc) is that we use it to avoid jittery event inference in the [cloudBit's](http://littlebits.cc/cloud) data stream.
+There are a variety of use-cases for hysteresis. One use-case at
+[littleBits](littlebits.cc) is that we use it to avoid jittery event inference
+in the [cloudBit's](http://littlebits.cc/cloud) data stream.
+
+Imagine detecting a rising-edge event in a jittery but generally upward-growing
+value. As the value crosses our target threshold value, it may actually go
+slightly above and then below multiple times in quick succession, triggering
+many events instead of just one.  
+
+```
+
+|                               /
+|                        /\    /
+|=======================/==\==/=============
+|       /\         /\  /    \/
+|------/--\-------/--\/---------------------
+|   /\/    \_____/
+|  /
+| /
+|-------------------------------------------
+                        ✓     ×
+
+✓ rising-edge event detected
+× ignore insignificant threshold cross
+
+= target threshold
+- hyteresis buffer
+
+```
 
 Here is a naive example:
 ```js
